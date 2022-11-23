@@ -1,18 +1,37 @@
  .Login {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  padding-top: 320px;
 }
 
 h1{
-    font-size: 80px;
+    font-size: 100px;
+    font-weight: 400;
     color: #9FA9A9;
 }
 
 p{
     color: #9FA9A9;
-    font-size: 30px;
+    font-size: 50px;
 }
 
+.ButtonGoogle{
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+   padding-left: 520px;
+   padding-top: 30px;
+    width: 25%;
+}
 
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

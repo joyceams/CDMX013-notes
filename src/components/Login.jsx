@@ -3,8 +3,10 @@ import './Login.css';
 function Login(){
     return (
         <div className="Login">
-            <h1>All Notes</h1>
-            <p>Click on the ‘write’ icon to get started</p>
+            <h1>Minimal Notes</h1>
+            <p>A simple and elegant note taking app</p>
+            <img src='../imgs/ButtonGoogle.png' alt="Google Login" className='ButtonGoogle'/>
+            
         </div>
     );
 }
