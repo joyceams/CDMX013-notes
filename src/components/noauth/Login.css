@@ -1,0 +1,37 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 320px;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: #9FA9A9;
+}
+
+p {
+  color: #9FA9A9;
+  font-size: 50px;
+}
+
+#signInDiv {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #88AA9D;
+  color: #202726;
+  padding: 5px 30px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  width: 150px;
+  align-items: center;
+  margin-left: 45%;
+  margin-bottom: 50px;
+}
