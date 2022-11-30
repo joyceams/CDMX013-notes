@@ -9,7 +9,7 @@ function MainView() {
     return (   
         <div className="MainView">
             <Header />
-            <p>Click on the ‘write’ icon to get started</p>
+            <p className='welcometext'>Click on the ‘write’ icon to get started</p>
             <div className='writeIcon'>
                 <FontAwesomeIcon icon={faPenToSquare} size="xl" />
             </div>
