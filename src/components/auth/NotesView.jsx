@@ -7,8 +7,8 @@ import { faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
 export const NotesView = () => {
     return (
         <div className='NotesView'>
-            <h1>Title</h1>
-            <p></p>
+            <input type="text" className='title' placeholder='Title' />
+            <input type="text" placeholder='Your text here' />
             <FontAwesomeIcon icon={faFloppyDisk} />
             </div>
     )
