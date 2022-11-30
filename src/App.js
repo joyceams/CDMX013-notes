@@ -8,7 +8,7 @@ import { NotesView } from "./components/auth/NotesView";
 
 function App() {
   return (
-    <MainView />
+    <MainView/>
 
   );
 }
