@@ -63,9 +63,65 @@ h1 {
   flex-direction: column;
 }
 
+input {
+  font-family: Alumni Sans;
+  margin: 30px;
+  color: #9FA9A9;
+  font-size: 50px;
+  background-color: transparent;
+  border: solid 5px;
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #23473F;
+  width: 90%;
+  height:600px;
+  text-align: left;
+}
+
+.title {
+  font-family: Alumni Sans;
+  font-size: 100px;
+  font-weight: 400;
+  color: #9FA9A9;
+  border: none;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.fa-floppy-disk{
+  color: #9FA9A9;
+  font-size: 2.5rem;
+  position: absolute;
+  margin: 51rem 0 0 75rem;
+}
+
+/* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
 }
