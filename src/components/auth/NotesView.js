@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-function NotesView(props) {
-    console.log(props);
+function NotesView() {
     const navigate = useNavigate();
 
     const navigateTo = (route) => {

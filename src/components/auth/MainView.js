@@ -5,8 +5,7 @@ import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import Header from './Header';
 
 
-function MainView(props) {
-    console.log(props);
+function MainView() {t status
     const navigate = useNavigate();
 
     const navigateTo = (route) => {
