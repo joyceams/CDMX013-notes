@@ -5,6 +5,7 @@ import '../noauth/Login.css';
 function Login() {
 
     const [user, setUser] = useState({});
+    
 
     function handleCallbackReponse(response) {
         console.log("Encoded JWT ID token: " + response.credential);
