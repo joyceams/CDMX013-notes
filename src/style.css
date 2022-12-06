@@ -57,10 +57,23 @@ h1 {
   font-size: 5rem;
 }
 
+.fa-arrow-right-from-bracket{
+  color: #23473F;
+  font-size: 4rem;
+}
+
+
 .NotesView {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.fa-arrow-left {
+  color: #23473F;
+  font-size: 5rem;
+  margin-right: 78rem;
+  margin-top: 2rem;
 }
 
 input {
@@ -105,8 +118,7 @@ input {
 }
 
 /* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1024px) 
@@ -116,8 +128,6 @@ input {
 }
 
 /* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen 
   and (min-device-width: 1366px) 
   and (max-device-width: 1366px) 

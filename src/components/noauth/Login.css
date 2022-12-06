@@ -24,23 +24,14 @@ p {
   margin-top: 30px;
 }
 
-button {
-  background-color: #88AA9D;
-  color: #202726;
-  padding: 5px 30px;
-  text-align: center;
-  font-size: 30px;
+.ButtonGoogle {
+  display: flex;
   border-radius: 10px;
-  width: 200px;
   align-items: center;
-  margin-left: 43%;
-  margin-bottom: 60px;
-  margin-top: 50px;
+  flex-direction: column;
+  padding-left: 520px;
+  padding-top: 30px;
+  width: 25%;
 }
 
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {}

@@ -1,5 +1,5 @@
 import { GoogleAuthProvider } from "firebase/auth";
-import { getAuth, signInWithPopup } from "firebase/auth";
+import { getAuth, signInWithPopup} from "firebase/auth";
 import {provider} from './firebaseConfig'
 
 export const loginwithgoogle=()=>{
@@ -25,4 +25,5 @@ export const loginwithgoogle=()=>{
     return errorCode
   });
 
-}
+};
+
