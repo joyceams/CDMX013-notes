@@ -14,15 +14,33 @@ code {
   font-family: Alumni Sans;
 }
 
+/* NOT FOUND VIEW*/
+.notfound {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.backButton {
+  font-family: Alumni Sans;
+  font-size: 60px;
+  height: 77px;
+  width: 120px;
+  border-radius: 15px;
+  background-color: #88AA9D;
+  margin-top: 4rem;
+}
+
+/* MAIN VIEW*/
+
 .MainView {
   display: flex;
   flex-direction: column;
   height: 800px;
   margin-top: 50px;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
 
-.welcometext{
+.welcometext {
   margin-left: 165px;
   margin-top: 50px;
 }
@@ -39,17 +57,21 @@ p {
   font-size: 50px;
 }
 
+/* HEADER COMPONENT*/
+
 .Header {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 100px;
+  margin-left: 10rem;
 }
 
 h1 {
   font-size: 100px;
   font-weight: 400;
   color: #9FA9A9;
+
 }
 
 .fa-bars {
@@ -57,11 +79,32 @@ h1 {
   font-size: 5rem;
 }
 
-.fa-arrow-right-from-bracket{
+.fa-arrow-right-from-bracket {
   color: #23473F;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin-left: 1rem;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: fixed;
+  top: 4rem;
+  left: 3rem;
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* NOTES VIEW*/
+
+.titleHeader {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 3rem;
+  gap: 60px;
+}
 
 .NotesView {
   display: flex;
@@ -69,11 +112,10 @@ h1 {
   flex-direction: column;
 }
 
-.fa-arrow-left {
+.fa-arrow-left-long {
   color: #23473F;
   font-size: 5rem;
-  margin-right: 78rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 input {
@@ -87,9 +129,34 @@ input {
   border-style: dashed;
   border-color: #23473F;
   width: 90%;
-  height:600px;
+  height: 600px;
   text-align: left;
+  outline: none;
+  resize: none;
 }
+
+.textInputArea {
+  margin-left: 12rem;
+  margin-right: 3.5rem;
+}
+
+textarea {
+  font-family: Alumni Sans;
+  margin: 15px;
+  color: #9FA9A9;
+  font-size: 50px;
+  background-color: transparent;
+  border: solid 5px;
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #23473F;
+  width: 86%;
+  height: 554px;
+  text-align: left;
+  outline: none;
+  padding: 2rem;
+}
+
 
 .title {
   font-family: Alumni Sans;
@@ -99,39 +166,31 @@ input {
   border: none;
   width: 90%;
   height: 100%;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  margin-right: 8rem;
+  border-bottom: solid 7px #23473F;
 }
 
-.fa-floppy-disk{
+.fa-floppy-disk {
   color: #9FA9A9;
   font-size: 2.5rem;
   position: absolute;
-  margin: 51rem 0 0 75rem;
+  margin: 52rem 0 0 75rem;
+}
+
+.fa-trash-can {
+  color: #712B33;
+  font-size: 2.5rem;
+  position: absolute;
+  margin: 52rem 0 0 71rem;
 }
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* Portrait */
 
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 1366px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}

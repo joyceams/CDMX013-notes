@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import '../../../src/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faFloppyDisk, faTrashCan } from '@fortawesome/free-regular-svg-icons';
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 
 function NotesView() {
     const navigate = useNavigate();
@@ -13,10 +13,16 @@ function NotesView() {
 
     return (
         <div className='NotesView'>
-            <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigateTo('/')}/>
+            <div className='titleHeader'>
             <input type="text" className='title' placeholder='Title' />
-            <input type="text" placeholder='Your text here' />
+            <FontAwesomeIcon icon={faArrowLeftLong} onClick={() => navigateTo('/')}/>
+            </div>
+            <div className='textInputArea'>
+                <textarea placeholder='Your text here' />
+                </div>
+            
             <FontAwesomeIcon icon={faFloppyDisk} onClick={() => navigateTo('/')}/>
+            <FontAwesomeIcon icon={faTrashCan} onClick={() => navigateTo('/')}/>
             </div>
     )
 }
