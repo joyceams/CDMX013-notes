@@ -5,6 +5,7 @@ export const logOutAccount = () => signOut(auth);
 
 signOut(auth).then(() => {
   // Sign-out successful.
+  console.log('bai krnal')
 }).catch((error) => {
   // An error happened.
 });

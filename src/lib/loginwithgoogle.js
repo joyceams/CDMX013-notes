@@ -11,6 +11,7 @@ export const loginwithgoogle=()=>{
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
+    console.log('ola krnal')
     return user
     // ...
   }).catch((error) => {

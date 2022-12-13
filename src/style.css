@@ -155,6 +155,7 @@ textarea {
   text-align: left;
   outline: none;
   padding: 2rem;
+  resize: none;
 }
 
 
@@ -171,19 +172,27 @@ textarea {
   border-bottom: solid 7px #23473F;
 }
 
-.fa-floppy-disk {
+.save{
+  background: transparent;
+  color: #9FA9A9;
+  font-size: 2rem;
+  margin-left: 71rem;
+  border: none;
+}
+
+/* .fa-floppy-disk {
   color: #9FA9A9;
   font-size: 2.5rem;
   position: absolute;
   margin: 52rem 0 0 75rem;
-}
+} */
 
-.fa-trash-can {
+/* .fa-trash-can {
   color: #712B33;
   font-size: 2.5rem;
   position: absolute;
   margin: 52rem 0 0 71rem;
-}
+} */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {}

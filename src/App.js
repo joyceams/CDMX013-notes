@@ -14,10 +14,8 @@ function App() {
   onAuthStateChanged(auth, (userfirebase) => {
     if (userfirebase) {
       setUser(userfirebase)
-      console.log(userfirebase);
     } else {
       setUser(null)
-      console.log('me salí');
     }
   });
 
