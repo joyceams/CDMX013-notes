@@ -1,10 +1,13 @@
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import '../../../src/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faFloppyDisk, faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { app } from '../../lib/firebaseConfig';
+import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore'
 
+const db = getFirestore(app);
 
 function NotesView() {
     const navigate = useNavigate();
@@ -27,7 +30,14 @@ function NotesView() {
 
     const saveData = async (e) => {
         e.preventDefault();
-        console.log('guardado krnal', user);
+        //console.log('guardado krnal', user);
+        try {
+            await addDoc(collection(db, 'Notes'), {
+                ...user
+            })
+        } catch (error) {
+            console.log(error);
+        }
         setUser({ ...initialValue })
 
     }
