@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import '../../../src/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faFloppyDisk, faTrashCan } from '@fortawesome/free-regular-svg-icons';
+import { faFloppyDisk, faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { app } from '../../lib/firebaseConfig';
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore'
@@ -56,12 +56,12 @@ function NotesView() {
                         onChange={getInputs} value={user.notetext} />
 
                 </div>
-
-                <button className='save'>SAVE</button>
-
-                {/* <FontAwesomeIcon icon={faFloppyDisk} onClick={() => navigateTo('/')} />
-                <FontAwesomeIcon icon={faTrashCan} onClick={() => navigateTo('/')} /> */}
+                <div className='iconContainer'>
+                <button className='buttonSave'><FontAwesomeIcon icon={faFloppyDisk} /></button>
+                <FontAwesomeIcon icon={faTrashCan} onClick={() => navigateTo('/')} />
+                </div>
             </form>
+            
         </div >
 
     )
