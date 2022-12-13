@@ -1,5 +1,5 @@
 import { GoogleAuthProvider } from "firebase/auth";
-import { getAuth, signInWithPopup } from "firebase/auth";
+import { getAuth, signInWithPopup} from "firebase/auth";
 import {provider} from './firebaseConfig'
 
 export const loginwithgoogle=()=>{
@@ -11,6 +11,7 @@ export const loginwithgoogle=()=>{
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
+    console.log('ola krnal')
     return user
     // ...
   }).catch((error) => {
@@ -25,4 +26,5 @@ export const loginwithgoogle=()=>{
     return errorCode
   });
 
-}
+};
+

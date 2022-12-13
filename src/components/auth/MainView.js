@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import '../../../src/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare } from '@fortawesome/free-regular-svg-icons';
 import Header from './Header';
 
 
-function MainView() {t status
+function MainView() {
     const navigate = useNavigate();
 
     const navigateTo = (route) => {

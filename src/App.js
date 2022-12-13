@@ -1,31 +1,38 @@
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import './App.css';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import './style.css';
 import Login from './components/noauth/Login';
 import MainView from "./components/auth/MainView";
 import NotesView from './components/auth/NotesView';
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import NotFound from './components/NotFound';
 
 const auth = getAuth();
 
 function App() {
-  const [user, setUSer] = useState(null);
+  const [user, setUser] = useState(null);
   onAuthStateChanged(auth, (userfirebase) => {
     if (userfirebase) {
-     setUSer(userfirebase)
+      setUser(userfirebase)
     } else {
-      setUSer(null)
+      setUser(null)
     }
   });
 
   if (!user) {
-    return <Login setUser={setUSer} />;
+    return (
+      <Routes>
+    <Route path='/' element={<Login setUser={setUser} />} />
+    <Route path='*' element={<NotFound />} />
+    </Routes>
+    )
   }
 
   return (
     <Routes>
       <Route path='/' element={<MainView />} />
       <Route path='/notes' element={<NotesView />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   );
 }
