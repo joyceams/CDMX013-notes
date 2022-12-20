@@ -4,7 +4,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './style.css';
 import Login from './components/noauth/Login';
 import MainView from "./components/auth/MainView";
-import NotesView from './components/auth/NotesView';
+import NoteAdd from './components/auth/NoteAdd';
 import NotFound from './components/NotFound';
 
 const auth = getAuth();
@@ -31,7 +31,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<MainView />} />
-      <Route path='/notes' element={<NotesView />} />
+      <Route path='/notes' element={<NoteAdd user = {user} />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
   );
