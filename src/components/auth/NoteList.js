@@ -11,7 +11,7 @@ import MainView from './MainView';
 const db = getFirestore(app);
 
 export default function NoteList() {
-    const [allnotes, setList] = useState([])
+    const [allnotes, setList] = useState(null)
 
     //renderiza lista de notas
     useEffect(() => {
@@ -31,10 +31,21 @@ export default function NoteList() {
         getNotesList()
     }, [])
 
+    if (!allnotes) {
+        return (
+            <p>Loading...</p>
+        )
+    }
+
+    if (allnotes.length === 0) {
+        return (
+            <p className='welcometext'>Click on the ‘write’ icon to get started</p>
+        )
+    }
+
     return (
         <div className='NotesContainer'>
             <div className='cardBody'>
-                {/*   {allnotes.length === 0 && <MainView/>} */}
                 {
                     allnotes.map(oneNote => (
                         <div className='noteBody' key={oneNote.id}>
