@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function NotFound(props) {
+function NotFound() {
 
     const navigate = useNavigate();
 

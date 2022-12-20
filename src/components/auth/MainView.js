@@ -1,8 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import '../../../src/style.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons';
+
 import Header from './Header';
+import NoteList from './NoteList'
 
 
 function MainView() {
@@ -16,6 +19,7 @@ function MainView() {
         <div className="MainView">
             <Header />
             <p className='welcometext'>Click on the ‘write’ icon to get started</p>
+            <NoteList />
             <div className='writeIcon'>
                 <FontAwesomeIcon icon={faPenToSquare} size="xl" onClick={() => navigateTo('/notes')} />
             </div>
