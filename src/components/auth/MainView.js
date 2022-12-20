@@ -18,7 +18,6 @@ function MainView() {
     return (
         <div className="MainView">
             <Header />
-            <p className='welcometext'>Click on the ‘write’ icon to get started</p>
             <NoteList />
             <div className='writeIcon'>
                 <FontAwesomeIcon icon={faPenToSquare} size="xl" onClick={() => navigateTo('/notes')} />
